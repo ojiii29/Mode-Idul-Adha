@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <link rel="icon" type="image/svg+xml" href="https://dilihatyuk.feeldream.repl.co/icon.png"> 
+  <link rel="apple-touch-icon" href="https://dilihatyuk.feeldream.repl.co/icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/lihatya/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>Script HTML buat Kamu</title>
+<meta name="description" content="HTML Feeldream Repl Co">
+<!-- ... stylesheet dan link lainnya ... -->
+
+<style>
+  #judulakhir {
+    display: none !important;
+  }
+</style>
+</head>
+<body>
+	
+   <div class="overlay">
+     <div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
+   </div>
+
+   <audio src="Maher Zain & Harris J - Qalbi Fil Madinah Official Lyric Video قلبي في المدينة.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <section class="first" onclick="playaud()">
+       <div class="wp"><img id="imgsatu" src="45a072bd0eda61850f82bcb72d29b8ef.jpg"/></div>
+       <img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+       <h2 class="title">Hai Nur Wildan Faqihah👋👋👋</h2>
+       <h4 class="title"><i>Aku Ada Pesan Buat Kamu Nih </i></h4>
+       <p class="slide-up"><i>Pencet terus yang bawah ya :)</i></p>
+  </section>
+  
+  <section>
+      <div class="wp"><img id="imgtiga" src="pexels-pixabay-460680.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+      <h3 class="title">Hai Mba Wilsss 👋👋👋 </h3>
+      <p id="teksnimasisatu">Tolong Dibaca yaaa... </p>
+  </section>
+  
+  <section>
+      <div class="wp"><img id="imgdua" src="45a072bd0eda61850f82bcb72d29b8ef.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>
+      <h3 class="title">Tunggu sebentar.....<br>Yokkk lanjut Pencet yang dibawah</h3>
+
+  </section>
+  
+  <section>
+  	<div class="wp"><img id="imglima" src="pexels-pixabay-460680.jpg"/></div>
+      <img id="stikersatu" class="stiker fade-in" src="https://feeldreams.github.io/bwa2.gif"/>
+      <img id="stikerdua" src="https://feeldreams.github.io/weee.gif"/>
+      <h3 id="teksnimasi">Selamat Hari Raya Idul Adha Mba Wilsss ☪︎🕌🕋<br><br>Mohon maaf lahir dan batin<br>aku mau minta maaf sama semua kesalahanku,<br>mulai dari ucapan yang kurang enak didengar dan perbuatanku yang tidak senonoh.
+      <br>Mba Wilsss, Aku minta maaf yaaa.... </h3>
+      <div id="Tombol">
+       <a id="By" onClick="fungsimau()">Dimaafin</a>
+       <a id="Bn" onClick="fungsigamau()">Gamauuu</a>
+     </div>
+  </section>
+  
+  <section id="iniakhir">
+  	<div class="wp" id="wpakhir"><img src="pexels-pixabay-460680.jpg"/></div>
+      <img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>
+      <img id="stikerakhir2" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
+      <h1 id="judulakhir"></h1>
+      <p id="kalimatakhir"></p>
+      <p id="palingakhir"></p>
+      <div id="TombolWA">
+       <a onClick="menuju()">Balas </a>
+     </div>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+<script>
+const body = document.querySelector("body"); audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);initom.style="opacity:0;bottom:0;transition:none";
+
+function fungsimau(){
+       fungsi=0;tes();
+       teksjudulakhir = "Yeayyy, makasii yaa sudah dimaafin 😁😁😁 ";
+       tekskalimatakhir = "<b>Alhamdulillah, makasih yaa sudah dimaafin 😁😁😁</b><br><b>Berarti sekarang boleh ngulangin kesalahan yang baru ya?😂😂😂</b><br><br> <b>Bercanda mbaa wilsss 🙏🙏🙏</b>";
+       tekspalingakhir = "Terimakasih Mba wilsss<br>sudah menempatkan waktunya untuk baca 🙏";
+       pesanwhatsapp = "";
+  }
+function fungsigamau(){
+       fungsi=0;tes();
+       teksjudulakhir = " Issss Jahat banget gak dimaafin<br>Tapi..... ";
+       tekskalimatakhir = "<b>Issss Jahat banget gak dimaafin,<br>Tapi.....<br>Bodoamat Pokonya harus dimaafin wleee 😜🤪</b> ";
+       tekspalingakhir = "Terimakasih Mba wilsss<br>sudah menempatkan waktunya untuk baca 🙏";
+       pesanwhatsapp = "";
+  }
+</script>
+<script>
+function menuju() {
+  const nomor = "6282328869021"; // Format internasional
+  const pesan = encodeURIComponent(pesanwhatsapp);
+  const url = `https://wa.me/${nomor}?text=${pesan}`;
+  window.open(url, '_blank');
+}
+</script>
+<script src="https://feeldreams.github.io/lihatya/script.js"></script>
+<script>
+  // Pastikan variabel ini diakses global
+  let pesanwhatsapp = "";
+
+  function menuju() {
+    const nomor = "6282328869021"; // Nomor tujuan WhatsApp dalam format internasional
+    const pesan = encodeURIComponent(pesanwhatsapp);
+    const url = `https://wa.me/${nomor}?text=${pesan}`;
+    window.open(url, '_blank');
+  }
+
+  // Jika tombol tidak bereaksi, pastikan listener alternatif
+  document.querySelector('#TombolWA a')?.addEventListener('click', menuju);
+</script>
+</body>
+</html>
